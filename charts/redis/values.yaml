@@ -3,9 +3,9 @@ redisStandalone:
   image: quay.io/opstree/redis
   tag: v6.2.5
   imagePullPolicy: IfNotPresent
-  # redisSecret:
-  #   secretName: redis-secret
-  #   secretKey: password
+  redisSecret:
+    secretName: redis-secret
+    secretKey: password
   serviceType: ClusterIP
   resources: {}
     # requests:
